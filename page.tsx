@@ -166,7 +166,52 @@ export default function Home() {
           Instagram: Hostframe Gambia
         </p>
       </section>
+<section id="contact" className="py-20 px-10 text-center">
+  <h2 className="text-4xl font-bold mb-8">Book a Service</h2>
 
+ <p className="mb-6">
+  Email:
+  <a
+    href="mailto:hostframegambia@gmail.com"
+    className="text-blue-600"
+  >
+    hostframegambia@gmail.com
+  </a>
+</p>
+  <form className="max-w-md mx-auto bg-white p-6 rounded-xl shadow-lg">
+
+    <input
+      type="text"
+      placeholder="Your Name"
+      className="w-full border p-3 mb-4 rounded"
+    />
+
+    <input
+      type="email"
+      placeholder="Your Email"
+      className="w-full border p-3 mb-4 rounded"
+    />
+
+    <select className="w-full border p-3 mb-4 rounded">
+      <option>Website Development</option>
+      <option>Mobile Apps</option>
+      <option>SEO & Promotion</option>
+    </select>
+
+    <textarea
+      placeholder="Describe your project"
+      className="w-full border p-3 mb-4 rounded"
+    ></textarea>
+
+    <button
+      className="bg-blue-700 text-white px-6 py-3 rounded"
+      type="submit"
+    >
+      Book Now
+    </button>
+
+  </form>
+</section>
     </main>
   );
 }
