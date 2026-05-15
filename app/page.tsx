@@ -203,12 +203,12 @@ export default function Home() {
       className="w-full border p-3 mb-4 rounded"
     ></textarea>
 
-    <button
-      className="bg-blue-700 text-white px-6 py-3 rounded"
-      type="submit"
-    >
-      Book Now
-    </button>
+  <a
+  href="mailto:hostframegambia@gmail.com?subject=Booking Request&body=Hello, I want to book a service."
+  className="bg-blue-700 text-white px-6 py-3 rounded inline-block"
+>
+  Book Now
+</a>
 
   </form>
 </section>
