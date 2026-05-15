@@ -1,4 +1,4 @@
-import Image from "next/image";
+Import Image from "next/image";
 export default function Home() {
   return (
         <main className="min-h-screen bg-white text-black">
@@ -10,7 +10,7 @@ export default function Home() {
           </div>
           <nav className="space-x-6 text-sm font-medium text-slate-700">
             <a href="#home" className="hover:text-blue-700">Home</a>
-            <a href="#services" className="hover:text-blue-700">Services</a>
+          <a href="#services">Services</a>
             <a href="#portfolio" className="hover:text-blue-700">Portfolio</a>
             <a href="#contact" className="hover:text-blue-700">Contact</a>
           </nav>
@@ -44,10 +44,9 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="py-20 px-10 text-center">
-        <h2 className="text-4xl font-bold mb-10">
-          Our Services
-        </h2>
+      <section id="services" className="py-20 px-10 text-center">
+<h2>Our Services</h2>
+  ...
 
         <div className="grid md:grid-cols-3 gap-8">
 
@@ -167,7 +166,52 @@ export default function Home() {
           Instagram: Hostframe Gambia
         </p>
       </section>
+<section id="contact" className="py-20 px-10 text-center">
+  <h2 className="text-4xl font-bold mb-8">Book a Service</h2>
 
+ <p className="mb-6">
+  Email:
+  <a
+    href="mailto:hostframegambia@gmail.com"
+    className="text-blue-600"
+  >
+    hostframegambia@gmail.com
+  </a>
+</p>
+  <form className="max-w-md mx-auto bg-white p-6 rounded-xl shadow-lg">
+
+    <input
+      type="text"
+      placeholder="Your Name"
+      className="w-full border p-3 mb-4 rounded"
+    />
+
+    <input
+      type="email"
+      placeholder="Your Email"
+      className="w-full border p-3 mb-4 rounded"
+    />
+
+    <select className="w-full border p-3 mb-4 rounded">
+      <option>Website Development</option>
+      <option>Mobile Apps</option>
+      <option>SEO & Promotion</option>
+    </select>
+
+    <textarea
+      placeholder="Describe your project"
+      className="w-full border p-3 mb-4 rounded"
+    ></textarea>
+
+    <button
+      className="bg-blue-700 text-white px-6 py-3 rounded"
+      type="submit"
+    >
+      Book Now
+    </button>
+
+  </form>
+</section>
     </main>
   );
 }
