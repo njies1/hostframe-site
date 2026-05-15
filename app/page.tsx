@@ -3,20 +3,28 @@ export default function Home() {
   return (
         <main className="min-h-screen bg-white text-black">
 
-      <header className="border-b bg-white/90 backdrop-blur sticky top-0 z-20">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div className="text-xl font-bold tracking-tight">
-            Hostframe
-          </div>
-          <nav className="space-x-6 text-sm font-medium text-slate-700">
-            <a href="#home" className="hover:text-blue-700">Home</a>
-          <a href="#services">Services</a>
-            <a href="#portfolio" className="hover:text-blue-700">Portfolio</a>
-            <a href="#contact" className="hover:text-blue-700">Contact</a>
-          </nav>
-        </div>
-      </header>
+     <header className="border-b bg-white sticky top-0">
+  <div className="flex justify-between items-center px-6 py-4">
 
+    <div className="text-xl font-bold">
+      Hostframe
+    </div>
+
+    <details className="relative">
+      <summary className="cursor-pointer text-2xl">
+        ☰
+      </summary>
+
+      <nav className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg p-4 flex flex-col gap-3">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </details>
+
+  </div>
+</header>
       {/* Hero Section */}
       <section id="home" className="bg-blue-700 text-white py-24 text-center">
        <Image
