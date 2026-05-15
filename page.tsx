@@ -44,11 +44,9 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="py-20 px-10 text-center">
-    <section id="services">
-  <h2>Our Services</h2>
+      <section id="services" className="py-20 px-10 text-center">
+<h2>Our Services</h2>
   ...
-</section>
 
         <div className="grid md:grid-cols-3 gap-8">
 
