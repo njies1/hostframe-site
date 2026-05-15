@@ -162,7 +162,7 @@ export default function Home() {
             href="tel:+2003164963"
             className="inline-flex items-center justify-center rounded-full bg-blue-700 px-6 py-3 text-white transition hover:bg-blue-800"
           >
-            +200 3164963
+            +220 3164963
           </a>
         </div>
 
